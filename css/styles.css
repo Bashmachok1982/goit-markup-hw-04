@@ -494,15 +494,19 @@ a {
   max-width: 264px;
 }
 /*добавил*/
-.footer-content {
+.footer-section-dark-bg .container {
   display: flex;
-  gap: 120px; /* Отступ 120px между footer-content и footer-social */
   align-items: baseline; /*добавил*/
 }
 /*добавил*/
-.footer-content-item {
+.footer-content {
   max-width: 264px; /* Ограничиваем ширину по тексту */
   margin-right: 120px; /*добавил*/
+}
+/*добавил*/
+.footer-social {
+  display: flex;
+  flex-direction: column;
 }
 /*добавил*/
 .footer-social-text {
@@ -517,7 +521,7 @@ a {
 .footer-social-list {
   display: flex;
   gap: 16px; /* Расстояние между иконками */
-  padding: 0;
+  /*padding: 0;
   list-style: none;
   justify-content: flex-start; /* Иконки тоже по левому краю */
 }
