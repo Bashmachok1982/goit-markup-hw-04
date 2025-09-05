@@ -420,6 +420,7 @@ a {
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 40px;
   background: #4d5ae5;
   position: absolute;
   top: 0;
@@ -496,10 +497,12 @@ a {
 .footer-content {
   display: flex;
   gap: 120px; /* Отступ 120px между footer-content и footer-social */
+  align-items: baseline; /*добавил*/
 }
 /*добавил*/
 .footer-content-item {
   max-width: 264px; /* Ограничиваем ширину по тексту */
+  margin-right: 120px; /*добавил*/
 }
 /*добавил*/
 .footer-social-text {
@@ -519,12 +522,17 @@ a {
   justify-content: flex-start; /* Иконки тоже по левому краю */
 }
 /*добавил*/
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+/*добавил*/
 .footer-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5; /* Синий круг */
   /* C6 */
